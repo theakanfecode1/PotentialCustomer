@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans_white"
+    android:orientation="vertical"
+    tools:context=".RegisteredCustomers">
+    <ImageView
+        android:id="@+id/refresh_registered"
+        android:layout_gravity="end"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/ic_refresh_foreground"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_registered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="Total number of registrations by you is:"
+            android:textColor="@color/trans_blue"
+            android:textSize="17sp" />
+
+
+
+        <TextView
+            android:id="@+id/total_number_of_registered_customers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/trans_blue"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/register_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/montserrat_medium"
+            android:padding="15dp"
+            android:text="Register new"
+            android:textAllCaps="false"
+            android:textColor="@color/trans_white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_xmlid_2_"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Log out"
+            android:textColor="#FF0000"
+            android:textSize="17sp"
+            android:layout_marginTop="100dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

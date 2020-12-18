@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogFullScreen" parent="Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/trans_blue</item>
+        <item name="colorPrimary">@color/trans_blue</item>
+        <item name="colorPrimaryDark">@color/trans_blue</item>
+        <item name="colorAccent">@color/trans_blue</item>
+    </style>
+</resources>

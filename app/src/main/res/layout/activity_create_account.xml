@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/trans_white">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CreateAccount"
+        android:background="@color/trans_blue"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_intersection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_verifyy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Remis Admin"
+            android:textColor="@color/trans_white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:background="@drawable/signin_board"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/trans_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="-3dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="19dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/welcome_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Create Account"
+                        android:textColor="@color/trans_blue"
+                        android:textSize="22sp"
+                        app:layout_constraintStart_toStartOf="@+id/guideline"
+                        app:layout_constraintTop_toTopOf="@id/guideline3" />
+
+                    <EditText
+                        android:id="@+id/first_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:drawableLeft="@drawable/ic_username_icon"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="First Name"
+                        android:inputType="textCapWords"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="@id/guideline2"
+                        app:layout_constraintStart_toStartOf="@id/guideline"
+                        app:layout_constraintTop_toTopOf="@id/welcome_back" />
+
+                    <EditText
+                        android:id="@+id/last_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:drawableLeft="@drawable/ic_username_icon"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="Last Name"
+                        android:textSize="20sp"
+                        android:inputType="textCapWords"
+                        app:layout_constraintEnd_toEndOf="@id/guideline2"
+                        app:layout_constraintStart_toStartOf="@id/guideline"
+                        app:layout_constraintTop_toBottomOf="@id/first_name" />
+                    <EditText
+                        android:id="@+id/phone_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="Phone Number"
+                        android:textSize="20sp"
+                        android:inputType="phone"
+                        app:layout_constraintEnd_toEndOf="@id/guideline2"
+                        app:layout_constraintStart_toStartOf="@id/guideline"
+                        app:layout_constraintTop_toBottomOf="@id/last_name" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="@id/guideline2"
+                        app:layout_constraintStart_toStartOf="@id/guideline"
+                        app:layout_constraintTop_toBottomOf="@id/phone_number" />
+
+
+                    <EditText
+                        android:id="@+id/password_create"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:drawableLeft="@drawable/ic_password"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="@id/guideline2"
+                        app:layout_constraintStart_toStartOf="@id/guideline"
+                        app:layout_constraintTop_toBottomOf="@id/email" />
+                    <EditText
+                        android:id="@+id/password_create_second"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:drawableLeft="@drawable/ic_password"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="@id/guideline2"
+                        app:layout_constraintStart_toStartOf="@id/guideline"
+                        app:layout_constraintTop_toBottomOf="@id/password_create" />
+
+                    <Button
+                        android:id="@+id/submit_create"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/button_background"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/trans_white"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="@+id/password_create_second"
+                        app:layout_constraintStart_toStartOf="@+id/password_create_second"
+                        app:layout_constraintTop_toBottomOf="@id/password_create_second" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="30dp" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_end="30dp" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="30dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
