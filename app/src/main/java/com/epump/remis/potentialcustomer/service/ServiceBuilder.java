@@ -18,7 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceBuilder {
 
-    private static final String URL = "https://api.epump.com.ng/";
+    private static final String URL = "";
 
     public static HttpLoggingInterceptor sLoggingInterceptor =
             new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY);
